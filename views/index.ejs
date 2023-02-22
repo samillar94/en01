@@ -1,0 +1,24 @@
+<%- include('header') %>
+
+    <main>
+        <div class="grid-row">
+            <% mydata.forEach((toy)=>{ %>
+            <div class="grid-item">
+                <div class="label">
+                <% if (toy.title.length> 50) { %>
+                <%= toy.title.slice(0, 49)+'…' %>
+                <% } else { %>
+                <%= toy.title %>
+                <% } %>
+                </div>
+                <div class="amazon">
+                    <a href="<%= toy.url %>">
+                        <img src="amazon-icon.svg">
+                    </a>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </main>
+
+    <%- include('footer') %>

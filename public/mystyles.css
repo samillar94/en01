@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family:  Geneva, Verdana, sans-serif;
+}
+
+main {
+    /* width: 85%; */
+    margin: 0 40px;
+    padding-top: 30px;
+
+}
+
+.grid-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.grid-item {
+    /* height: 50px; */
+    flex-basis: auto;
+    padding: 20px;
+    width: 19%; 
+    border: thin solid red;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.label {
+    flex-basis: auto;
+}
+
+.amazon {
+    margin-left: 20px;
+}
+
+.amazon a {
+    background-color: rgb(255, 229, 176);
+    padding: 20px;  
+    border-radius: 0 0 10px 10px;  
+}
+
+.amazon a img {
+    height: 1rem;
+}
+
+.header {
+    padding: 40px;
+    background-color: crimson;
+}
+
+.header .title {
+    margin-left: 10px;
+    font-size: larger;
+    color: white;
+}
+
+footer {
+    padding: 40px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 1458px) {
+    .grid-item {
+        padding: 20px;
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .grid-item {
+        width: 38%;
+    }
+}
+
+@media only screen and (max-width: 635px) {
+    .grid-item {
+        flex-basis: 100%;
+    }
+}
